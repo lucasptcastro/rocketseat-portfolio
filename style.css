@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box; /* Faz com que os paddings, margin sejam aplicados na caixa do elemento */
+}
+
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+
+  --avatar-url: url("./assets/profile.png");
+}
+
+body {
+  background: var(--body-bg-color);
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+#profile {
+  position: absolute;
+
+  width: 348px;
+  height: 292px;
+  left: 40px;
+  top: 40px;
+
+  background: #302f3d;
+
+  border: 1px solid #000000;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#profile img {
+  display: flex;
+  gap: 30px;
+
+  width: 128px;
+  height: 128px;
+  margin: 32px 110px;
+}
+
+#profile h4 {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+
+  color: #837e9f;
+}
+
+#profile p {
+  display: flex;
+  justify-content: center;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  color: #837e9f;
+  line-height: 16px;
+
+  margin: 0;
+}
