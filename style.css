@@ -18,7 +18,7 @@ body {
   font-family: "Merriweather Sans", sans-serif;
 }
 
-.left-containers {
+.left-cards {
   position: relative;
 
   display: flex;
@@ -79,17 +79,23 @@ body {
   margin: 0;
 }
 
-/* links */
-.links-container {
+/* todos os cards */
+
+.links-cards,
+.tecnologies-cards,
+.experiences-cards {
   background: var(--bg-cards);
 
+  box-shadow: var(--bg-shadow);
+  border-radius: var(--bg-radius);
+}
+
+/* links */
+.links-cards {
   width: 348px;
   height: max-content;
 
   padding: 30px 40px;
-
-  box-shadow: var(--bg-shadow);
-  border-radius: var(--bg-radius);
 }
 
 .links {
@@ -125,27 +131,24 @@ body {
 }
 
 /* tecnologias */
-.tecnologies-container {
-  background: var(--bg-cards);
-  border-radius: var(--bg-radius);
-}
 
 .tecnologies-content {
-  padding: 30px 0 30px 20px;
+  padding: 5px 0 30px 20px;
 }
 
-.tecnologies-content h4 {
+.tecnologies-content h4,
+.experiences-content h4 {
   color: var(--text-color);
   font-weight: 700;
   font-size: 20px;
 }
 
-.tecnologies-content #tecnologies {
+.tecnologies-content .tecnologies {
   display: flex;
   flex-direction: column;
 }
 
-.tecnologies-content #tecnologies p {
+.tecnologies-content .tecnologies p {
   display: flex;
   justify-content: center;
 
@@ -156,8 +159,6 @@ body {
   border-radius: 30px;
 
   margin: 6px 0 0 7px;
-
-  border: 1px solid red;
 }
 
 #first-tecnologies,
@@ -165,4 +166,31 @@ body {
 #third-tecnologies {
   display: flex;
   flex-direction: row;
+}
+
+/* experiencias */
+.experiences-content {
+  padding: 5px 0 30px 20px;
+  height: max-content;
+}
+
+.experiences ul li {
+  color: var(--text-color);
+}
+
+.experiences h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: var(--text-color);
+}
+
+.experiences p {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #837e9f;
 }
