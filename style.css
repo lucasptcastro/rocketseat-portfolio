@@ -7,6 +7,8 @@
   --text-color: #837e9f;
   --bg-cards: #302f3d;
   --bg-techs: #cb92b1;
+  --bg-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  --bg-radius: 20px;
 
   --avatar-url: url("./assets/profile.png");
 }
@@ -16,27 +18,38 @@ body {
   font-family: "Merriweather Sans", sans-serif;
 }
 
-#profile {
-  position: absolute;
+.left-containers {
+  position: relative;
 
-  width: 348px;
-  height: 292px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
   left: 40px;
   top: 40px;
 
-  background: #302f3d;
+  width: max-content;
+  height: max-content;
+}
+
+/* profile */
+#profile {
+  position: relative;
+
+  width: 348px;
+  height: 292px;
+
+  background: var(--bg-cards);
 
   border: 1px solid #000000;
-  border-radius: 20px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: var(--bg-radius);
+  box-shadow: var(--bg-shadow);
 }
 
 #profile img {
-  display: flex;
-  gap: 30px;
-
   width: 128px;
   height: 128px;
+
   margin: 32px 110px;
 }
 
@@ -64,4 +77,92 @@ body {
   line-height: 16px;
 
   margin: 0;
+}
+
+/* links */
+.links-container {
+  background: var(--bg-cards);
+
+  width: 348px;
+  height: max-content;
+
+  padding: 30px 40px;
+
+  box-shadow: var(--bg-shadow);
+  border-radius: var(--bg-radius);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.links #localization,
+#work,
+#github,
+#linkedin,
+#instagram,
+#portfolio,
+#email {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-color);
+
+  align-items: center;
+}
+
+#github a,
+#linkedin a,
+#instagram a,
+#portfolio a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* tecnologias */
+.tecnologies-container {
+  background: var(--bg-cards);
+  border-radius: var(--bg-radius);
+}
+
+.tecnologies-content {
+  padding: 30px 0 30px 20px;
+}
+
+.tecnologies-content h4 {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.tecnologies-content #tecnologies {
+  display: flex;
+  flex-direction: column;
+}
+
+.tecnologies-content #tecnologies p {
+  display: flex;
+  justify-content: center;
+
+  width: 86px;
+  height: 24px;
+  background: #cb92b1;
+
+  border-radius: 30px;
+
+  margin: 6px 0 0 7px;
+
+  border: 1px solid red;
+}
+
+#first-tecnologies,
+#second-tecnologies,
+#third-tecnologies {
+  display: flex;
+  flex-direction: row;
 }
