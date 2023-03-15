@@ -5,7 +5,7 @@
 :root {
   --body-bg-color: #22212c;
   --text-color: #837e9f;
-  --bg-cards: #302f3d;
+  --bg-card: #302f3d;
   --bg-techs: #cb92b1;
   --bg-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   --bg-radius: 20px;
@@ -18,7 +18,7 @@ body {
   font-family: "Merriweather Sans", sans-serif;
 }
 
-/* main */
+/* ===== MAIN ===== */
 .main {
   display: flex;
   gap: 60px;
@@ -40,14 +40,14 @@ body {
 .right-cards {
 }
 
-/* profile */
+/* ===== PROFILE ===== */
 #profile {
   position: relative;
 
   width: 348px;
   height: 292px;
 
-  background: var(--bg-cards);
+  background: var(--bg-card);
 
   border: 1px solid #000000;
   border-radius: var(--bg-radius);
@@ -87,20 +87,21 @@ body {
   margin: 0;
 }
 
-/* todos os cards */
+/* ===== TODOS OS card ===== */
 
-.links-cards,
-.tecnologies-cards,
-.experiences-cards,
-#my-projects {
-  background: var(--bg-cards);
+.links-card,
+.tecnologies-card,
+.experiences-card,
+#my-projects,
+.education-card {
+  background: var(--bg-card);
 
   box-shadow: var(--bg-shadow);
   border-radius: var(--bg-radius);
 }
 
-/* links */
-.links-cards {
+/* ===== LINKS ===== */
+.links-card {
   width: 348px;
   height: max-content;
 
@@ -139,14 +140,15 @@ body {
   color: var(--text-color);
 }
 
-/* tecnologias */
+/* ===== TECNOLOGIAS ===== */
 
 .tecnologies-content {
   padding: 5px 0 30px 20px;
 }
 
 .tecnologies-content h4,
-.experiences-content h4 {
+.experiences-content h4,
+.educations-content h4 {
   color: var(--text-color);
   font-weight: 700;
   font-size: 20px;
@@ -177,7 +179,7 @@ body {
   flex-direction: row;
 }
 
-/* experiencias */
+/* ===== EXPERIENCIAS ===== */
 .experiences-content {
   padding: 5px 0 30px 20px;
   height: max-content;
@@ -204,7 +206,39 @@ body {
   color: #837e9f;
 }
 
-/* my projects */
+/* ===== EDUCATION ===== */
+.educations-content {
+  padding: 30px 0 30px 20px;
+}
+
+.educations ul li {
+  color: var(--text-color);
+}
+
+.educations ul li h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.educations ul li p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.educations ul li .period {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+
+  padding-top: 0px;
+}
+
+/* ===== MY PROJECTS ===== */
 #my-projects {
   width: 952px;
   height: 86px;
