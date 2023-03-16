@@ -26,6 +26,7 @@ body {
   margin: 40px 40px;
 }
 
+/* ===== LEFT CARDS ===== */
 .left-cards {
   position: relative;
 
@@ -35,9 +36,6 @@ body {
 
   width: max-content;
   height: max-content;
-}
-
-.right-cards {
 }
 
 /* ===== PROFILE ===== */
@@ -92,8 +90,8 @@ body {
 .links-card,
 .tecnologies-card,
 .experiences-card,
-#my-projects,
-.education-card {
+.education-card,
+#my-projects {
   background: var(--bg-card);
 
   box-shadow: var(--bg-shadow);
@@ -238,6 +236,15 @@ body {
   padding-top: 0px;
 }
 
+/* ===== RIGHT CARDS ===== */
+.right-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+
+  border: 1px solid red;
+}
+
 /* ===== MY PROJECTS ===== */
 #my-projects {
   width: 952px;
@@ -266,4 +273,108 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: var(--text-color);
+}
+
+/* ===== PROJECTS ===== */
+
+.projects-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+#first-card,
+#second-card {
+  width: 461px;
+  height: 186px;
+
+  background: var(--bg-card);
+  border-radius: var(--bg-radius);
+  box-shadow: var(--bg-shadow);
+}
+
+#first-project-content,
+#second-project-content {
+  padding: 10px 30px 30px 30px;
+}
+
+#project-title,
+#second-project-title {
+  display: flex;
+  gap: 16px;
+}
+
+#project-title p,
+#second-project-title p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: var(--text-color);
+}
+
+#project-description,
+#second-project-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: var(--text-color);
+}
+
+.project-achivements,
+.second-project-achivements {
+  display: flex;
+  gap: 16px;
+}
+
+#project-stars,
+#project-branchs,
+#second-project-stars,
+#second-project-branchs {
+  display: flex;
+  gap: 8px;
+
+  align-items: center;
+}
+
+#project-stars,
+#project-branchs p,
+#project-language p,
+#second-project-stars,
+#second-project-branchs p,
+#second-project-language p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: var(--text-color);
+}
+
+#project-achivements,
+#second-project-achivements {
+  display: flex;
+  justify-content: space-between;
+}
+
+#project-language,
+#second-project-language {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  gap: 8px;
+}
+
+#project-language #language,
+#second-project-language #language,
+#second-language {
+  width: 15px;
+  height: 15px;
+
+  background: #e7de79;
+  border: 2px solid #837e9f;
+  border-radius: 50%;
 }
